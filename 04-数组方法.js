@@ -35,10 +35,10 @@
 // console.log(list.indexOf(3)); //2
 // console.log(list.indexOf(6)); //-1
 
-//7.Array.lastIndexOf()===》返回指定元素在数组中的最后一个值的索引
-const list = [1, 2, 3, 4, 5];
-console.log(list.lastIndexOf(3)); // 2
-console.log(list.lastIndexOf(3, 1)); // -1
+// //7.Array.lastIndexOf()===》返回指定元素在数组中的最后一个值的索引
+// const list = [1, 2, 3, 4, 5];
+// console.log(list.lastIndexOf(3)); // 2
+// console.log(list.lastIndexOf(3, 1)); // -1
 
 //8.Array.findIndex()
 
@@ -52,3 +52,22 @@ console.log(list.lastIndexOf(3, 1)); // -1
 //原始数组不会被改变
 
 //13.Array.join()==>将一个数组的所有元素连接成一个字符串并返回这个字符串
+
+// //14.Array.forEach
+// const arr = [1, 2, 3, 4];
+// let res = arr.forEach((item) => console.log(item * 2));
+// console.log(arr);
+// console.log(res);
+
+let obj = {
+  name: "lqy",
+  age: 23,
+};
+for (let prop in obj) {
+  console.log(prop + ":" + obj[prop]);
+}
+
+let arr = [0, 1, 2, 3];
+for (let index in arr) {
+  console.log(index);
+}
